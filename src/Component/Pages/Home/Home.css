@@ -1,0 +1,557 @@
+.hero {
+  position: relative;
+  /* clip-path: polygon(0% 0%, 75% 0%, 36% 100%, 0% 100%); */
+  z-index: -9;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero .HeroImg {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -899;
+}
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  background: rgba(24, 30, 87, 0.6);
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
+.hero .shape {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(0% 0%, 75% 0%, 36% 100%, 0% 100%);
+  background: rgba(24, 30, 87, 0.732);
+  z-index: 9999;
+}
+.hero .LineImg {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+}
+.hero .CircleImg {
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  bottom: 0;
+}
+
+.hero .Hero-details {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.hero .Hero-details h1 {
+  font-size: 3.5rem;
+  line-height: 70px;
+  color: #fff;
+}
+.hero .Hero-details p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  color: #fff;
+  margin: 3% 0 5%;
+}
+/* ----------------------------------------------------About Section-------------------------------------- */
+.AboutHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 50px; */
+}
+.AboutHome .leftside {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AboutHome .rightside {
+  width: 50%;
+}
+.AboutHome .leftside img {
+  width: 60%;
+}
+.AboutHome .rightside h4 {
+  font-size: 18px;
+  line-height: 80px;
+}
+.AboutHome .rightside h2 {
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: capitalize;
+}
+.AboutHome .rightside p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0 30px;
+}
+
+/* -------------------------------------------------------Our believe---------------------------------------  */
+.ourbelieve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.ourbelieve h4 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.OurBelieveCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 294px;
+  height: 325px;
+  background: #e1eaf2;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.OurBelieveCard img {
+  width: 120px;
+  height: 120px;
+}
+.OurBelieveCard h5 {
+  font-size: 40px;
+  margin: 15px 0 3px;
+  text-transform: capitalize;
+}
+.OurBelieveCard p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* --------------------------------------------our clause--------------------------  */
+.OurClause h4 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 15px 0 3px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.OurClauseCard {
+  background: #fff;
+  overflow: hidden;
+  width: 319px;
+  height: 450px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.OurClauseCard-img {
+  /* max-width: 100%; */
+  height: 30vh;
+  object-fit: cover;
+}
+.card-detail {
+  padding: 1.2rem;
+}
+.card-detail h6 {
+  font-size: 0.8rem;
+  line-height: 26px;
+  font-weight: bolder;
+  color: #063a7a;
+}
+.card-detail h5 {
+  font-size: 1.1rem;
+  line-height: 22px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  /* margin-bottom: 20px; */
+}
+.card-detail .donation {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.card-detail .donation span {
+  font-size: 13px;
+  line-height: 16px;
+}
+.card-detail .progress-bar {
+  width: 100%;
+  height: 7px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+}
+.card-detail .progress-bar .bar {
+  width: 60%;
+  height: 12px;
+  background: #063a7a;
+}
+.card-detail .OurClause-btn {
+  margin-top: 30px !important;
+}
+/* --------------------------------Volunteer----------------------------- */
+.volunteer {
+  text-align: center;
+  padding: 5rem 9rem;
+  background: #063a7a;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.volunteer h4 {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 15px 0 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.volunteer h6 {
+  font-size: 20px;
+  /* line-height: 50px; */
+  text-align: center;
+  margin: 15px 8rem 5rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+/* -------------------------------be our partner ------------------------------ */
+.Hpartner {
+  display: flex;
+  gap: 120px;
+}
+.Hpartner .leftside {
+  float: left;
+}
+.Hpartner .leftside h4 {
+  font-size: 30px;
+  line-height: 50px;
+  margin: 15px 0 5px;
+  text-transform: capitalize;
+  color: #000;
+}
+.Hpartner .leftside p {
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+.Hpartner .rightside {
+  display: flex;
+  gap: 30px;
+}
+/* ----------------------Gallery--------------------- */
+.HomeGallery h4 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 15px 0 35px;
+  text-transform: capitalize;
+  color: #000;
+}
+.HomeGallery img {
+  object-fit: cover;
+}
+.HomeGallery .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomeGallery .content .leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: contain;
+}
+.HomeGallery .content .rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.HomeGallery .content .rightside .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------------------------------media query----------------------------  */
+@media screen and (max-width: 768px) {
+  .hero .LineImg {
+    width: 20%;
+  }
+  .hero .CircleImg {
+    width: 40%;
+  }
+  .hero .Hero-details {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  .hero .Hero-details h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    color: #fff;
+  }
+  .hero .Hero-details p {
+    font-size: 1rem;
+    line-height: 25px;
+    color: #fff;
+    margin: 7% 0 12%;
+  }
+
+  /* --------------------------About in Home --------------------------- */
+  .AboutHome {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .AboutHome .leftside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .AboutHome .rightside {
+    width: 100%;
+  }
+  .AboutHome .leftside img {
+    width: 60%;
+  }
+  .AboutHome .rightside h4 {
+    font-size: 14px;
+    line-height: 60px;
+  }
+  .AboutHome .rightside h2 {
+    font-size: 25px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+  .AboutHome .rightside p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 30px;
+    text-align: justify;
+  }
+  /* -------------------------------our believe--------------------------  */
+
+  .ourbelieve h4 {
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .OurBelieveCard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .OurBelieveCard {
+    width: 274px;
+    height: 305px;
+  }
+  .OurBelieveCard img {
+    width: 100px;
+    height: 100px;
+  }
+  .OurBelieveCard h5 {
+    font-size: 30px;
+    margin: 15px 0 3px;
+    text-transform: capitalize;
+  }
+
+  /* -------------------------------our clause ---------------------------------- */
+
+  .OurClause .grid4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .OurClause h4 {
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    margin: 15px 0 3px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  .OurClauseCard {
+    background: #fff;
+    overflow: hidden;
+    width: 319px;
+    height: 450px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .card-detail {
+    padding: 1.2rem;
+  }
+  .card-detail h6 {
+    font-size: 0.8rem;
+    line-height: 26px;
+    font-weight: bolder;
+    color: #063a7a;
+  }
+  .card-detail h5 {
+    font-size: 1.1rem;
+    line-height: 22px;
+    font-weight: bolder;
+    /* margin-bottom: 20px; */
+  }
+  .card-detail .donation {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  .card-detail .donation span {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .card-detail .progress-bar {
+    width: 100%;
+    height: 7px;
+    background: #e5e5e5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+  }
+  .card-detail .progress-bar .bar {
+    width: 60%;
+    height: 12px;
+    background: #063a7a;
+  }
+  .card-detail .OurClause-btn {
+    margin-top: 30px !important;
+  }
+  /* --------------------------------Volunteer----------------------------- */
+  .volunteer {
+    text-align: center;
+    padding: 2.5rem 0rem;
+    background: #063a7a;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .volunteer h4 {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin: 15px 0 20px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .volunteer h6 {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin: 15px 1rem 3rem;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  /* -------------------------------be our partner ------------------------------ */
+  .Hpartner {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .Hpartner .leftside {
+    float: left;
+  }
+  .Hpartner .leftside h4 {
+    font-size: 30px;
+    line-height: 50px;
+    margin: 15px 0 5px;
+    text-transform: capitalize;
+    color: #000;
+  }
+  .Hpartner .leftside p {
+    margin-bottom: 40px;
+    line-height: 25px;
+  }
+  .Hpartner .rightside {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* ----------------------Gallery--------------------- */
+  .HomeGallery h4 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 28px;
+    margin: 15px 0 35px;
+    text-transform: capitalize;
+    color: #000;
+  }
+  .HomeGallery img {
+    width: 100%;
+  }
+  .HomeGallery .content {
+    flex-direction: column;
+  }
+  .HomeGallery .content .leftside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .HomeGallery .content .rightside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .HomeGallery .content .rightside .top img {
+    width: 100%;
+  }
+  .HomeGallery .content .rightside .bottom img {
+    width: 50%;
+  }
+  .HomeGallery .content .rightside .bottom {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

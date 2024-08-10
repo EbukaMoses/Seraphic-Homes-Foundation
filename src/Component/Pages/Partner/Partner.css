@@ -1,0 +1,48 @@
+.partner-form {
+  width: 100%;
+  padding: 3rem;
+  background: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.partner-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+.input-group label {
+  font-size: 16px;
+  color: #222222be;
+  margin-bottom: 0.3rem;
+}
+.input-group label span {
+  color: #fe0000be;
+}
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #222222be;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+.input-group {
+}
+
+.partner-form .form-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .partner-form {
+    width: 100%;
+    padding: 2rem;
+  }
+}

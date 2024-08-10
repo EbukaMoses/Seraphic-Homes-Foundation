@@ -1,0 +1,162 @@
+.About-row {
+  display: flex;
+  gap: 20px;
+}
+.About-row .leftside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.About-row .leftside img {
+  width: 70%;
+}
+.About-row .rightside {
+  width: 100%;
+}
+.About-row .rightside h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.About-row .rightside p {
+  text-align: justify;
+}
+
+/* -----------------------------------------Mission----------------------------------- */
+.Mission-row {
+  display: flex;
+  gap: 20px;
+}
+.Mission-row .leftside {
+  width: 100%;
+}
+.Mission-row .leftside h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.Mission-row .leftside p {
+  margin-bottom: 2rem;
+}
+.Mission-row .rightside {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mission-row .rightside img {
+  width: 80%;
+}
+
+/* -------------------------------program------------------------------------------------ */
+.our-program h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  /* color: #fff; */
+}
+.our-program h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  /* color: #fff; */
+}
+.our-program .program-card {
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.our-program .program-card img {
+  width: 100%;
+}
+.our-program .program-card .program-card-content {
+  padding: 2rem;
+}
+
+.our-program .program-card .program-card-content h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.our-program .program-card .program-card-content p {
+  text-align: justify;
+}
+.our-program .program-card .program-card-content .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .About-row {
+      /* display: flex; */
+      flex-direction: column;
+      gap: 20px;
+    }
+    .About-row .leftside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .About-row .leftside img {
+      width: 70%;
+    }
+    .About-row .rightside {
+      width: 100%;
+    }
+    .About-row .rightside h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .About-row .rightside p {
+      text-align: justify;
+    }
+    
+    /* -----------------------------------------Mission----------------------------------- */
+    .Mission-row {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    .Mission-row .leftside {
+      width: 100%;
+    }
+    .Mission-row .leftside h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .Mission-row .leftside p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+    .Mission-row .rightside {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Mission-row .rightside img {
+      width: 100%;
+    }
+    
+    /* -------------------------------program------------------------------------------------ */
+    .our-program h4 {
+      font-size: 1rem;
+    }
+    .our-program h3 {
+      font-size: 1.5rem;
+    }
+    .our-program .program-card .program-card-content h4 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .our-program .program-card .program-card-content p {
+      text-align: justify;
+    }
+    .our-program .program-card .program-card-content .btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+}

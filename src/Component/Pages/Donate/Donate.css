@@ -1,0 +1,11 @@
+.donate h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px){
+    .donate h2 {
+        font-size: 15px;
+    }
+}
